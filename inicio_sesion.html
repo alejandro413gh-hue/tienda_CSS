@@ -12,7 +12,7 @@
         /*sección de selectores tipo TAG*/
 
         div{
-            border: 1px solid black;
+           
             display: block ;
         }
          
@@ -22,18 +22,39 @@
         }
 
         input{
-            display: block;
-            align-content: center;
+            margin: 0 auto;
             width: 30%;
 
         }
 
         button{
-            background-color: blue;
             color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 24px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.1s ease;
         }
+
+        .btn-primary{
+            background-color: #3b6ac2;
+        }
+
+        .btn-primary:hover{
+            background-color: #000ecc;
+        }
+
+        .btn-secondary{
+            background-color: #6C757D;
+        }
+
+        .btn-secondary:hover{
+            background-color: #474e53;
+        }
+
         .contenedor_genral{
-            background-color: #EC7063
+            background-color: #F5F7FA;
 
         }
         .titulo_texto{
@@ -44,7 +65,7 @@
 
         .contenedor_hijo{
             position: relative;
-            background-color: #c96f3b;
+            background-color: #FFFFFF;
             width: 80%;
             margin: 0 auto;
             margin-bottom: 3%;
@@ -53,6 +74,15 @@
             align-content: center;
             align-self: center;
             vertical-align: middle;
+        }
+        .contenedor_boton{
+            display: block;
+            background-color: #FFFFFF;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 3%;
+            text-align: center;
+
         }
         /*sección de selectrores de ID*/
 
@@ -97,9 +127,10 @@
             <input type="text" />
             <br>
 
-            <div class="contenedor_hijo">
-                <button>Iniciar</button>
-                <button>Regresar</button>
+            <div class="contenedor_boton">
+                <br>
+                <button class="btn-primary">Iniciar</button>
+                <button class="btn-secondary">Regresar</button>
                 <h4>0lvido contraseña..?</h4>
             </div>
 
